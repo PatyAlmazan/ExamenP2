@@ -1,2 +1,2 @@
-# ExamenP2
+# SegundoParcial
 Examen Segundo Parcial
