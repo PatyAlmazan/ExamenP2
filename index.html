@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>REST Alumnos</title>
+	<meta name="viewport">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<style>
+		.bandera{
+			width: 40%;
+			height: auto;
+			display: block;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body onload="buscaAlumno('tablaDatos')">
+	<h1 align="center">Alumnos</h1>
+	<h2>Nombre: Ana Patricia Sánchez Almazán</h2>
+	<h2>Numero de Control: 16220001</h2>
+	<h2>Carrera: Ingenieria en Informatica</h2>
+	<h2>Semestre: 9</h2>
+	<div align="center" >
+		<div class="row">
+			<div class="col" align="center">
+				<input style="width:20%;" type="text" class="form-control" id="matricula" placeholder="matricula">
+				<button onclick="buscaAlumno('tablaDatos')" class="btn btn-success" value="a">Buscar</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<table id="tablaDatos" class="table">
+				<thead>
+					<tr>
+						<th width="5%">Matricula</th>
+						<th width="19%">Nombre</th>
+						<th width="19%">Curp</th>
+						<th width="19%">Sexo</th>
+						<th width="19%">Ciudad</th>
+						<th width="19%">Detalle</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+<script src="main.js"></script>
